@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    .gitignore                                         :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jdomingu <jdomingu@student.42malaga.com>   +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/09/28 01:56:43 by jdomingu          #+#    #+#              #
+#    Updated: 2022/09/28 01:58:15 by jdomingu         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+checker_linux
+checker_Mac
+a.out
+.DS_Store
+push_swap
+push_swap_tester
+libft/*.o
+libft/libft.a
+src/*.o
+
