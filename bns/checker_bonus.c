@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdomingu <jdomingu@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/09 00:48:35 by jdomingu          #+#    #+#             */
-/*   Updated: 2023/01/09 00:48:45 by jdomingu         ###   ########.fr       */
+/*   Created: 2023/01/10 20:17:17 by jdomingu          #+#    #+#             */
+/*   Updated: 2023/01/10 20:17:22 by jdomingu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ static void	ft_check_lines(t_stack *a, t_stack *b, t_list *instr)
 {
 	char	*move;
 
-	instr = malloc(sizeof(t_list));
+	instr = ft_calloc(1, sizeof(t_list));
 	if (!instr)
 		ft_free_stacks(a->values, b->values, 1);
 	move = get_next_line(0);
@@ -63,12 +63,17 @@ static void	ft_check_lines(t_stack *a, t_stack *b, t_list *instr)
 			if (ft_strncmp(move, "\n", 1) == 0)
 				break ;
 			ft_free_instr(instr);
+			free(move);
 			ft_free_stacks(a->values, b->values, 1);
 		}
+		free(move);
 		move = get_next_line(0);
 	}
 	ft_execute_moves(a, b, instr);
 	ft_check_result(a, b);
+	free(instr);
+	if (move)
+		free(move);
 }
 
 int	main(int argc, char **argv)

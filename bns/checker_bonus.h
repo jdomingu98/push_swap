@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdomingu <jdomingu@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/27 16:48:21 by jdomingu          #+#    #+#             */
-/*   Updated: 2022/12/27 16:49:33 by jdomingu         ###   ########.fr       */
+/*   Created: 2023/01/10 20:17:25 by jdomingu          #+#    #+#             */
+/*   Updated: 2023/01/10 20:17:31 by jdomingu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include "../libft/libft.h"
 # include <limits.h>
-# include "../gnl/get_next_line_bonus.h"
+# include "../get_next_line/get_next_line_bonus.h"
 
 typedef struct s_stack
 {

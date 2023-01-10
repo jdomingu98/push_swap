@@ -16,7 +16,7 @@ SRCS = 	src/push_swap.c src/calculate_max_length.c src/control_status.c src/pars
 	src/sort_data.c src/operations.c src/operations_both_stacks.c src/resolve.c \
 	src/heuristics.c src/push_back.c src/repositon_stack_a.c
 
-GNL_SRCS = gnl/get_next_line_bonus.c gnl/get_next_line_utils_bonus.c
+GNL_SRCS = get_next_line/get_next_line_bonus.c get_next_line/get_next_line_utils_bonus.c
 
 BSRCS = bns/checker_bonus.c bns/calculate_max_length_bonus.c bns/control_status_bonus.c \
 	bns/parse_data_bonus.c bns/operations_bonus.c bns/operations_both_stacks_bonus.c \
@@ -25,7 +25,7 @@ OBJS = $(SRCS:.c=.o)
 BOJS = $(BRCS:.c=.o)
 LIBFT = libft
 LIBFT_LIB = libft/libft.a
-GNL_DIR = -I gnl
+GNL_DIR = -I get_next_line
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 BUFFER_FLAG = -D BUFFER_SIZE=42

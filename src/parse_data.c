@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_data_bonus.c                                 :+:      :+:    :+:   */
+/*   parse_data.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdomingu <jdomingu@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/10 20:18:16 by jdomingu          #+#    #+#             */
-/*   Updated: 2023/01/10 20:18:20 by jdomingu         ###   ########.fr       */
+/*   Created: 2022/12/22 21:09:35 by jdomingu          #+#    #+#             */
+/*   Updated: 2022/12/22 21:12:12 by jdomingu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker_bonus.h"
+#include "push_swap.h"
 
 static long	ft_atoi_long(char *str)
 {

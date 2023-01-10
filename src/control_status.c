@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   control_status_bonus.c                             :+:      :+:    :+:   */
+/*   control_status.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdomingu <jdomingu@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/10 20:17:37 by jdomingu          #+#    #+#             */
-/*   Updated: 2023/01/10 20:17:41 by jdomingu         ###   ########.fr       */
+/*   Created: 2022/12/22 21:13:55 by jdomingu          #+#    #+#             */
+/*   Updated: 2022/12/23 02:40:08 by jdomingu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker_bonus.h"
+#include "push_swap.h"
 
 void	ft_free_stacks(int *a, int *b, int exit)
 {
@@ -24,18 +24,6 @@ void	ft_print_error(void)
 {
 	write(STDERR_FILENO, "Error\n", 6);
 	exit(EXIT_FAILURE);
-}
-
-void	ft_free_instr(t_list *instr)
-{
-	t_list	*node;
-
-	while (instr)
-	{
-		node = instr->next;
-		free(instr);
-		instr = node;
-	}
 }
 
 int	ft_is_sorted(t_stack *s, char choice)
@@ -56,4 +44,15 @@ int	ft_is_sorted(t_stack *s, char choice)
 			i--;
 		return (i == 0);
 	}
+}
+
+int	ft_same_sign(int cost_a, int cost_b)
+{
+	return ((cost_a < 0 && cost_b < 0) || (cost_a > 0 && cost_b > 0));
+}
+
+void	ft_free_costs(int *cost_a, int *cost_b)
+{
+	free(cost_a);
+	free(cost_b);
 }

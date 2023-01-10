@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   calculate_max_length_bonus.c                       :+:      :+:    :+:   */
+/*   calculate_max_length.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdomingu <jdomingu@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/10 20:17:02 by jdomingu          #+#    #+#             */
-/*   Updated: 2023/01/10 20:17:09 by jdomingu         ###   ########.fr       */
+/*   Created: 2022/12/22 21:14:38 by jdomingu          #+#    #+#             */
+/*   Updated: 2022/12/22 21:18:14 by jdomingu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker_bonus.h"
+#include "push_swap.h"
 
 static int	ft_check_if_number(char *str)
 {
