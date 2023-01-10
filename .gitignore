@@ -15,8 +15,9 @@ checker_Mac
 a.out
 .DS_Store
 push_swap
+checker
 push_swap_tester
+get_next_line/*.o
 libft/*.o
 libft/libft.a
 src/*.o
-
