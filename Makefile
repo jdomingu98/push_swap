@@ -22,7 +22,7 @@ BSRCS = bns/checker_bonus.c bns/calculate_max_length_bonus.c bns/control_status_
 	bns/parse_data_bonus.c bns/operations_bonus.c bns/operations_both_stacks_bonus.c \
 	bns/execute_moves.c $(GNL_SRCS)
 OBJS = $(SRCS:.c=.o)
-BOJS = $(BRCS:.c=.o)
+BOBJS = $(BSRCS:.c=.o)
 LIBFT = libft
 LIBFT_LIB = libft/libft.a
 GNL_DIR = -I get_next_line

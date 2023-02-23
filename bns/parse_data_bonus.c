@@ -6,7 +6,7 @@
 /*   By: jdomingu <jdomingu@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 20:18:16 by jdomingu          #+#    #+#             */
-/*   Updated: 2023/01/10 20:18:20 by jdomingu         ###   ########.fr       */
+/*   Updated: 2023/02/20 21:56:16 by jdomingu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ static void	ft_get_numbers_of_string(t_stack *a, int *b, char *numbers)
 void	check_range_and_duplicates(int ac, char **av, t_stack *a, t_stack *b)
 {
 	int	i;
-	int	parse_to_int;
+	long	parse_to_int;
 
 	i = 0;
 	while (++i < ac)

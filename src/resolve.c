@@ -47,7 +47,7 @@ static void	push_back_to_a(t_stack *a, t_stack *b, t_aux_data *data)
 
 void	push_to_b(t_stack *a, t_stack *b, t_aux_data *data)
 {
-	while (a->len >= data->len / 2 && a->len > 3)
+	while (a->len > data->len / 2 && a->len > 3)
 	{
 		if (get_position_in_sorted(a->values[0], *data) <= data->len / 2)
 			push(a, b, 'b');
